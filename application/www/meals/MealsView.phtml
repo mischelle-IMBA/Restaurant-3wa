@@ -1,0 +1,11 @@
+
+  <h1>Menu</h1>
+<?php foreach($carte as $m): ?>
+  <h2 align="center"><i class="fas fa-heart"></i> <span style="text-decoration: underline;"><?= $m['categorie'] ?></span><i class="fas fa-heart"></i></h2>
+  <img src="<?= $wwwUrl ?>/images/meals/<?= $m['photo'] ?>" alt="<?= $m['nom'] ?>" />
+    <p> <strong><?= $m['nom'] ?></strong></p>
+    <p>prix: <?= $m['prix'] ?> $</p>
+    <p>en stock: <?= $m['stock'] ?></p>
+    <p>disponible sur place: <?= $m['disponible_sur_place'] ?></p>
+    <p><?= $m['description'] ?></p>
+<?php endforeach; ?>
